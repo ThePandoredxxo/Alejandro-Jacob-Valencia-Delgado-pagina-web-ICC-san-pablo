@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 850px;
     width: 100%;
     background: linear-gradient(180deg, 
                 rgba(50, 21, 85, 0.65) 0%, 
@@ -58,7 +58,7 @@ h1 {
 
 .content-flex {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 40px;
     margin: 35px 0;
@@ -176,33 +176,83 @@ h1 {
 
 .links-container {
     flex: 1;
-    min-width: 260px;
+    min-width: 280px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 18px;
+}
+
+.profile-bio {
+    font-size: 0.95rem;
+    color: rgba(254, 217, 183, 0.9);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.social-links-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .social-link {
     color: var(--cyan-glow);
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .social-link:hover {
     color: var(--sunset-orange);
-    transform: translateX(5px);
+    transform: translateX(3px);
     text-shadow: 0 0 8px rgba(240, 113, 103, 0.6);
 }
 
 .dedicatory-text {
-    font-size: 0.95rem;
-    color: rgba(254, 217, 183, 0.75);
-    line-height: 1.6;
-    margin-top: 15px;
+    font-size: 0.9rem;
+    color: rgba(254, 217, 183, 0.7);
+    line-height: 1.5;
     border-left: 3px solid var(--sunset-magenta);
     padding-left: 12px;
+}
+
+.teachers-section {
+    margin-top: 40px;
+    width: 100%;
+    border-top: 1px solid rgba(240, 113, 103, 0.15);
+    padding-top: 25px;
+}
+
+.teachers-section h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    color: var(--sunset-orange);
+    margin-bottom: 15px;
+}
+
+.teachers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.teacher-link {
+    color: var(--sunset-gold);
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 8px 12px;
+    background: rgba(50, 21, 85, 0.3);
+    border-radius: 8px;
+    border: 1px solid rgba(76, 201, 240, 0.1);
+    transition: all 0.3s ease;
+}
+
+.teacher-link:hover {
+    background: rgba(204, 43, 122, 0.2);
+    border-color: var(--sunset-magenta);
+    color: #fff;
+    padding-left: 18px;
 }
 
 .btn-interactive {
@@ -231,7 +281,7 @@ h1 {
 
 .simulation-box {
     text-align: center;
-    margin-top: 25px;
+    margin-top: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
