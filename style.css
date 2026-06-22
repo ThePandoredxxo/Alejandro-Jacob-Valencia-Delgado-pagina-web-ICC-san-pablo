@@ -1,0 +1,152 @@
+/* ==========================================================================
+   VARIABLES Y CONFIGURACIÓN GENERAL
+   ========================================================================== */
+:root {
+    --bg-dark: #1a1a2e;          /* Espacio profundo */
+    --primary: #f72585;          /* Magenta Neón */
+    --secondary: #480ca8;        /* Púrpura Profundo */
+    --accent: #4cc9f0;           /* Cian Neón */
+    --text-light: #f3c4fb;       /* Rosa Pálido Crema */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ==========================================================================
+   CONTENEDOR PRINCIPAL (CAJA CÓSMICA)
+   ========================================================================== */
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(72, 12, 168, 0.5) 0%, rgba(26, 26, 46, 0.9) 100%);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(247, 37, 133, 0.3);
+    box-shadow: 0 10px 40px rgba(72, 12, 168, 0.2);
+    margin-top: 50px;
+    position: relative; 
+}
+
+/* Título Principal */
+h1 {
+    color: var(--text-light);
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: 'Cinzel', serif; 
+    font-size: 2.8rem; /* Ajustado sutilmente para que no rompa en pantallas medianas */
+    text-shadow: 0 0 10px rgba(247, 37, 133, 0.6), 0 0 20px rgba(247, 37, 133, 0.4);
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+/* ==========================================================================
+   ESTRUCTURA DE TUS DATOS (NUEVAS CLASES AÑADIDAS)
+   ========================================================================== */
+
+/* Textos informativos de arriba */
+.academic-text {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Distribución en paralelo para la foto y el bloque de links */
+.content-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Si se encoge la pantalla, la info baja ordenadamente */
+}
+
+/* Estilo para la imagen Ale.png */
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid rgba(76, 201, 240, 0.4);
+    box-shadow: 0 0 15px rgba(76, 201, 240, 0.2);
+}
+
+/* Contenedor vertical de enlaces y dedicatoria */
+.links-container {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Enlaces limpios que cambian de color al pasar el cursor */
+.social-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.social-link:hover {
+    color: var(--primary);
+    text-shadow: 0 0 8px rgba(247, 37, 133, 0.6);
+}
+
+/* Mensaje destacado para el profesor con borde de neón izquierdo */
+.dedicatory-text {
+    font-size: 0.95rem;
+    color: rgba(243, 196, 251, 0.8);
+    line-height: 1.5;
+    margin-top: 15px;
+    border-left: 3px solid var(--primary);
+    padding-left: 10px;
+}
+
+/* ==========================================================================
+   BOTÓN INTERACTIVO DE LÓGICA (APP.JS)
+   ========================================================================== */
+.btn-interactive {
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: 20px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+
+    background: linear-gradient(45deg, var(--accent) 0%, var(--primary) 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+   
+    box-shadow: 0 0 10px rgba(76, 201, 240, 0.5);
+}
+
+.btn-interactive:hover {
+    box-shadow: 0 0 15px rgba(247, 37, 133, 0.8), 0 0 30px rgba(76, 201, 240, 0.6);
+    transform: translateY(-2px);
+}
