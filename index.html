@@ -1,8 +1,3 @@
-La línea 73 tiene un enlace directo (`<a>`) que no tiene la clase `class="teacher-link"`. Al no tener esta clase, el enlace no adoptará los estilos visuales (el fondo oscuro, los bordes curvos y el efecto de desplazamiento al pasar el cursor) que tienen los demás profesores en la lista.
-
-Aquí tienes el código completo corregido y limpio:
-
-```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -79,6 +74,20 @@ Aquí tienes el código completo corregido y limpio:
             </div>
         </div>
 
+        <div class="classmates-section">
+            <h2>Compañeros de Clase</h2>
+            <div class="classmates-grid">
+                <a target="_blank" href="https://yeniferhuarachi-code.github.io/yeniferhuarachihalanoca.github.io/" class="classmate-link">✨ Yenifer Rocio Huarachi Halanoca</a>
+                <a target="_blank" href="https://yerriflores.github.io/" class="classmate-link">⚡ Yerri Tony Flores Velasquez</a>
+                <a target="_blank" href="https://franmnm.github.io/" class="classmate-link">🔮 Franco Yerix Aguilar Yucra</a>
+                <a target="_blank" href="https://annyaguilar-hub.github.io/anny_aguilar_cv/" class="classmate-link">🌟 Gael Andre Sandoval Garcia</a>
+                <span class="classmate-link disabled">💫 Aguilar Zambrano Anny Briyid</span>
+                <a target="_blank" href="https://angelfabianramosmunoz.github.io/" class="classmate-link">🛡️ Angel Fabian Ramos Muñoz</a>
+                <a target="_blank" href="https://diegoalonsoaragonmamani.github.io/DiegoAlonsoAragonMamani/" class="classmate-link">🌀 Diego Alonso Aragon Mamani</a>
+                <a target="_blank" href="https://timely-crepe-7fb679.netlify.app/" class="classmate-link">🪐 Vivian Elizabeth Rivera Cosi</a>
+            </div>
+        </div>
+
         <div class="simulation-box">
             <button class="btn-interactive" id="btn-simular">Iniciar Simulación Cuántica</button>
             <canvas id="canvas-ondas"></canvas>
@@ -88,5 +97,3 @@ Aquí tienes el código completo corregido y limpio:
     <script src="app.js"></script>
 </body>
 </html>
-
-```
